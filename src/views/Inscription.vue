@@ -173,7 +173,7 @@ export default {
         return;
       }
 
-      alert("Form submitted!");
+      alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.Connexion));
     },
   },
   mixins: [validationMixin],

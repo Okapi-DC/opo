@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import UsersRoutes from '@/components/users/routes'
 
 Vue.use(VueRouter)
 
 const routes = [
-
   {
     path: '/',
     name: 'Home',
@@ -14,37 +12,42 @@ const routes = [
     },
   },
   // spread/apply
-  ...UsersRoutes,
-
-  {
-    path: '/inscription',
-    name: 'Inscription',
-    components: {
-      default: () => import(/* webpackChunkName: "inscription" */ '../views/Inscription.vue'),
-    },
-  },
-
-  {
-    path : '/connexion',
-    name : 'Connexion',
-    components: {
-      default: () => import(/* webpackChunkName: "connexion" */ '../views/Connexion.vue'),
-    },
-  },
-
-  {
-    path : '/jeu',
-    name : 'jeu',
-    components: {
-      default: () => import(/* webpackChunkName: "Game" */ '../views/Jeu.vue'),
-    },
-  },
 
   {
     path : '/contact',
     name : 'Contact',
     components: {
       default: () => import(/* webpackChunkName: "connexion" */ '../views/Contact.vue'),
+    },
+  },
+
+  {
+    path : '/Price',
+    name : 'Price',
+    components: {
+      default: () => import(/* webpackChunkName: "tarif" */ '../views/Price.vue'),
+    },
+  },
+
+  {
+    path : '/Mentions',
+    name : 'Mentions',
+    components: {
+      default: () => import(/* webpackChunkName: "Mentions" */ '../views/Mentions.vue'),
+    },
+  },
+  {
+    path : '/Politique',
+    name : 'Politique',
+    components: {
+      default: () => import(/* webpackChunkName: "Politique" */ '../views/Politique.vue'),
+    },
+  },
+  {
+    path : '/Fonctionnalites',
+    name : 'Fonctionnalites',
+    components: {
+      default: () => import(/* webpackChunkName: "Fonctionnalites" */ '../views/Fonctionnalites.vue'),
     },
   },
 

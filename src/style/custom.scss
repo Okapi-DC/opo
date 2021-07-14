@@ -1,60 +1,264 @@
-$info : black;
+$primary : #5ECFC4;
+$secondary : #433373;
+$white : white;
+$gray : #e5e5e5;
 
-
-$primary : #dd8556;
-$secondary : #dd8556;
-
-
-footer{
-  margin-top: 170px!important;
+a{
+  color: $primary;
+}
+a:hover{
+  color: $gray;
 }
 
-input {
-  border-radius: 10px!important;
-  color:#dd8556!important; ;
-  width: 250px!important;
+.fond_01{
+  background-color: $primary;
+}
+.fond_02 {
+  background-color: $secondary;
 }
 
-textarea {
-  border-radius: 10px!important;
+.text_white {
+  color: white;
 }
 
-button {
-  border-radius: 10px!important;
-  color: white!important;
+//btn
+.btn_01 {
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background-color:$primary;
+  color: $white;
+}
+.btn_01:hover{
+
+}
+.btn_02{
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background-color: $secondary;
+  color: $white;
+}
+.btn_02:hover{
+  color: $gray;
+}
+.btn_03{
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background: white;
+  color: $secondary;
 }
 
-.fav {
-  border-radius: 10px!important;
-  background-color: #DD8556;
-  padding: 0px 4px;
+.btn_03:hover{
+  color: $gray;
+}
+//btn texte
+.btn_04{
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background: none;
+  color: $primary;
+}
+.btn_04:hover{
+  background: none;
+  color: $gray;
+}
+.btn_05 {
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background: none;
+  color: white;
+}
+.btn_05:hover {
+  background: none;
+  color:$white;
+}
+.btn_06{
+  border-radius: 15px;
+  padding: 7px 22px;
+  border: none;
+  background: white;
+  color: $primary;
+}
+.modal-footer {
+  display: none!important;
+}
 
-//  box-shadow: 0px 0px 5px black;
-};
+.title-border{
+  font-size: 110px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: $gray;
+  -webkit-text-stroke-width: 2px;
+}
+
+.title-border_02{
+  font-size: 110px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #9B80D3;
+  -webkit-text-stroke-width: 2px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.height_60 {
+  height: 60px;
+}
+.padding_top_130{
+  padding-top: 130px;
+}
+
+.padding_top_150{
+  padding-top: 150px;
+}
+
+.padding_top_30 {
+  padding-top: 30px;
+}
+
+.padding_top_80 {
+  padding-top: 80px;
+}
+
+.padding_top_260 {
+  padding-top: 260px;
+}
+.margin_top_30 {
+  margin-top: 30px;
+}
+.margin_top_90 {
+  margin-top: 90px;
+}
+.margin_top_160 {
+  margin-top: 160px;
+}
+.padding_bottom_90{
+  padding-bottom: 90px;
+}
+
+iframe {
+  width: 100%;
+}
+
 .fav a {
   color: white!important;
 }
 
 .fav:hover {
-  color: #d78e67!important;
+  color: black!important;
+}
+
+.title{
+  color: $primary;
+  font-weight: bold;
+}
+.title_02 {
+  color: $secondary;
+  font-weight: bold;
+}
+
+/*
+img {
+display: block;
+  max-width: 100%;
+  height: auto;
+}*/
+
+.player_01 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px solid $primary;
+  border-radius: 100%;
+  padding: 3px;
+  margin-top: -3px;
+}
+.player_02 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px solid $white;
+  border-radius: 100%;
+  padding: 3px;
+  margin-top: -3px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,600&display=swap');
+
+h1,h2,h3,h4,h5,h6, {
+  font-family: 'Nunito', sans-serif;
+}
+p {
+  font-weight: lighter;
+  color: #5C5C5C;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
 }
 
 
-
-.espace {
-  margin-top: 30px;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Yusei Magic', sans-serif;
-  color: #DDCD56!important;
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin:0;
 }
 
-h1 {
-  font-size: 35px!important;
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+  -o-appearance: none;
+  margin:0
+}
+.input:focus {
+  outline: none!important;
+  box-shadow: none!important;
 }
 
+input:hover
+{
+  border: none;
+}
 
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+
+@media screen and (max-width: 980px) {
+.heroheader {
+  padding-top: 250px;
+  width: 80%;
+}
+  .element {
+    display: none;
+  }
+  .title-border {
+    font-size: 80px;
+  }
+  .title-border_02{
+    font-size: 80px;
+  }
+  }
+
+
+//@import 'node_modules/bootstrap/scss/bootstrap.scss';
+//@import 'node_modules/bootstrap-vue/src/index.scss';

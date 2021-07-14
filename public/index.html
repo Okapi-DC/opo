@@ -1,18 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P3XC9QL');</script>
+      <!-- End Google Tag Manager -->
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH95RK5"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
+      <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+      <meta name="description" content="Ma description personnalisée">
+<!--    <link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+      <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+
+      <meta property="og:title" content="Nous aidons vos collaborateurs à identifier leurs soft skills et atteindre leurs objectifs. ">
+      <meta property="og:description" content="Offering tour packages for individuals or groups.">
+      <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+      <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+
+
+    <title>Tilt</title>
+
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-R75MJ5L6FP"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+è
+          gtag('config', 'G-R75MJ5L6FP');
+      </script>
 
   </head>
   <body>
+  <!-- Messenger Plug-in Discussion Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plug-in Discussion code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107861224872158");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+          FB.init({
+              xfbml            : true,
+              version          : 'v11.0'
+          });
+      };
+
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3XC9QL"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- built documents will be auto injected -->
+
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id=%27+i+dl;f.parentNode.insertBefore(j,f)';
+  })(window,document,'script','dataLayer','GTM-TH95RK5');</script>
+  <!-- End Google Tag Manager -->
   </body>
+
 </html>

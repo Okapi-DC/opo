@@ -6,7 +6,7 @@
         <b-form @submit.stop.prevent="onSubmit" class="espace">
           <b-form-group>
             <b-form-input
-                v-model="$v.form.email.$model"
+                v-model="$v.form.email.$model "
                 :state="validateState('email')"
                 type="email"
                 placeholder="Adresse email"
@@ -71,7 +71,7 @@ export default {
         required,
         minLength: minLength(8)
       }
-    }
+    },
   },
   methods: {
 
@@ -106,7 +106,6 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
 
 
